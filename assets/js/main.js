@@ -1,3 +1,1 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('Welcome to Ray Carlos Junior Vega Lugo\'s academic website');
-});
+document.addEventListener('DOMContentLoaded',()=>{document.body.style.opacity='0';document.body.style.transition='opacity .5s';requestAnimationFrame(()=>document.body.style.opacity='1');const btn=document.createElement('button');btn.textContent='🌙';btn.style.position='fixed';btn.style.top='16px';btn.style.right='16px';btn.style.padding='8px';btn.style.borderRadius='8px';btn.onclick=()=>{document.body.classList.toggle('dark');if(document.body.classList.contains('dark')){document.body.style.background='#121212';document.body.style.color='#f2f2f2';}else{document.body.style.background='#f4f7fb';document.body.style.color='#222';}};document.body.appendChild(btn);});
